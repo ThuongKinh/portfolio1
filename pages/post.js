@@ -1,25 +1,34 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
-import Layout from '../components/layouts/articles'
-import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-
-import firstBlog from '../public/images/contents/blog1.png'
-
-const Post = () => (
-  <Layout >
-    <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
-        Popular Posts
-      </Heading>
-      <Section delay={0.1}>
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <GridItem title="Vlog 1-Week 1" thumbnail={firstBlog} href="https://fb.watch/tSV7KhUa19/" />
-
-        </SimpleGrid>
-      </Section>
-
-    </Container>
-  </Layout>
-)
+import { Container, Box,Heading,SimpleGrid,Divider } from "@chakra-ui/react";
+import Section from '../components/section';
+import { WorkGridItem } from "../components/grid-item";
+import timestopThumbnails from "../public/images/contents/timestop.png";
+import camerastutter from '../public/images/contents/effect1.png';
+import shakehighlight from '../public/images/contents/shake-highlight.png';
+const Post=()=>{
+    return(
+        <Container>
+            <Heading as="h3" fontSize={20} mb={4}>
+                Post
+            </Heading>
+            <SimpleGrid columns={[1,1,2]} gap={6}>
+                <Section>
+                    <WorkGridItem id="timestop" title="TimeStop Effect" thumbnail={timestopThumbnails}>
+                        A timestop effect
+                    </WorkGridItem>
+                </Section>
+                <Section>
+                    <WorkGridItem id="camerastutter" title="Camera Stutter Effect" thumbnail={camerastutter}>
+                        A camera stutter effect
+                    </WorkGridItem>
+                </Section>
+                <Section>
+                    <WorkGridItem id="shakehighlights" title="Shake Highlight Effect" thumbnail={shakehighlight}>
+                        A timestop effect
+                    </WorkGridItem>
+                </Section>
+            </SimpleGrid>
+        </Container>
+    )
+}
 
 export default Post
