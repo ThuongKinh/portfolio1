@@ -4,6 +4,7 @@ import Paragraph from '../../components/paragraph';
 import Layout from '../../components/layouts/articles';
 import ReactPlayer from 'react-player';
 import { useState } from 'react';
+import { TitlePost } from '../../components/post';
 
 const Post = () => {
     const [isPlaying, setIsPlaying] = useState(true);
@@ -15,9 +16,9 @@ const Post = () => {
     return (
         <Layout title="Portfolio">
             <Container>
-                <Title>
+                <TitlePost>
                     Timestop <Badge>2024</Badge>
-                </Title>
+                </TitlePost>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>

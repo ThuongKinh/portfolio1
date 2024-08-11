@@ -4,6 +4,7 @@ import { WorkGridItem } from "../components/grid-item";
 import timestopThumbnails from "../public/images/contents/timestop.png";
 import camerastutter from '../public/images/contents/effect1.png';
 import shakehighlight from '../public/images/contents/shake-highlight.png';
+import Hologram  from "../posts/hologram";
 const Post=()=>{
     return(
         <Container>
@@ -23,12 +24,13 @@ const Post=()=>{
                 </Section>
                 <Section>
                     <WorkGridItem id="shakehighlights" title="Shake Highlight Effect" thumbnail={shakehighlight}>
-                        A timestop effect
+                        A shake highlight effect
                     </WorkGridItem>
                 </Section>
+                <Hologram/>
             </SimpleGrid>
         </Container>
     )
 }
 
-export default Post
+export default Post;

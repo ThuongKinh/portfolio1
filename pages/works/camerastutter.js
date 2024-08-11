@@ -1,5 +1,6 @@
 import { Badge, Link, List, Container, ListItem } from '@chakra-ui/react';
 import { Title, Meta, WorkImage } from '../../components/work';
+import { TitlePost } from '../../components/post';
 import Paragraph from '../../components/paragraph';
 import Layout from '../../components/layouts/articles';
 import ReactPlayer from 'react-player';
@@ -15,9 +16,9 @@ const Post = () => {
     return (
         <Layout title="Portfolio">
             <Container>
-                <Title>
+                <TitlePost>
                     Camera stutter <Badge>2024</Badge>
-                </Title>
+                </TitlePost>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
