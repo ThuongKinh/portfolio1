@@ -5,6 +5,7 @@ import timestopThumbnails from "../public/images/contents/timestop.png";
 import camerastutter from '../public/images/contents/effect1.png';
 import shakehighlight from '../public/images/contents/shake-highlight.png';
 import Hologram  from "../posts/hologram";
+import Text from "../posts/texteffect";
 const Post=()=>{
     return(
         <Container>
@@ -28,6 +29,7 @@ const Post=()=>{
                     </WorkGridItem>
                 </Section>
                 <Hologram/>
+                <Text/>
             </SimpleGrid>
         </Container>
     )
