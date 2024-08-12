@@ -6,6 +6,7 @@ import camerastutter from '../public/images/contents/effect1.png';
 import shakehighlight from '../public/images/contents/shake-highlight.png';
 import Hologram  from "../posts/hologram";
 import Text from "../posts/texteffect";
+import Highlight from "../posts/highlight";
 const Post=()=>{
     return(
         <Container>
@@ -30,6 +31,7 @@ const Post=()=>{
                 </Section>
                 <Hologram/>
                 <Text/>
+                <Highlight/>
             </SimpleGrid>
         </Container>
     )
