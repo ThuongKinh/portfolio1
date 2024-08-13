@@ -4,6 +4,7 @@ import { WorkGridItem } from "../components/grid-item";
 import portfolioThumbnail from '../public/images/works/portfolio.png'
 import blogThumbnail from '../public/images/works/blog.png'
 import cyborgThumbnail from '../public/images/works/cyborg.png'
+import LR from '../works/linear-regression'
 const Works=()=>{
     return(
         <Container>
@@ -26,6 +27,7 @@ const Works=()=>{
                         A cyberpunk poster
                     </WorkGridItem>
                 </Section>
+                <LR/>
             </SimpleGrid>
         </Container>
     )
