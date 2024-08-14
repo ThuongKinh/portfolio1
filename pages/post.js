@@ -7,6 +7,7 @@ import shakehighlight from '../public/images/contents/shake-highlight.png';
 import Hologram  from "../posts/hologram";
 import Text from "../posts/texteffect";
 import Highlight from "../posts/highlight";
+import Postcard from "../posts/postcard";
 const Post=()=>{
     return(
         <Container>
@@ -32,6 +33,7 @@ const Post=()=>{
                 <Hologram/>
                 <Text/>
                 <Highlight/>
+                <Postcard/>
             </SimpleGrid>
         </Container>
     )
